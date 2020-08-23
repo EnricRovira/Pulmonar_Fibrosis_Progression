@@ -30,4 +30,14 @@ In order to reproduce the results, follow these steps:
  
  2. Afternoon
  
+ ## Data
  
+ ## Model
+ 
+ ## Results & Metrics
+ 
+ ## Conclusions & Further Steps
+
+
+
+
