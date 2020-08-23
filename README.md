@@ -21,7 +21,7 @@ The code is based on Jupyter notebook Framework, using Python code. The main lib
 
 Also there are few GPU commands in order to manage the memmory, in case you dont have a GPU just comment them or in case you have it you will need to install tf-nightly
 
-`pip install --upgrade tensorflow`
+`pip install --upgrade tensorflow`<br>
 `pip install --upgrade tf-nightly`
 
 In order to reproduce the results, follow these steps:
