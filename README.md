@@ -8,6 +8,6 @@ The challenge is to make predictions over the time with the CT_Scans images, met
 
 ![01](./Miscellaneous/01_pulm_fib.png)
 
-The fibrosis can be observed as scars over the lungs. This gif reflects a CT Scan to a ptient with critic obvious Fibrosis
+The fibrosis can be observed as scars over the lungs. This gif reflects a CT Scan with severe fibrosis
 
 ![02](./Miscellaneous/04_scan_gif.gif)
