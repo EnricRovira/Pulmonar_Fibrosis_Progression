@@ -17,7 +17,7 @@ The fibrosis can be observed as scars over the lungs. This gif reflects a CT Sca
 
 ## Installation
 
-The code is based on Jupyter notebook Framework, using Python code. The main library used is Tensorflow 2.3 but any 2.x should be supported, also i use libraries like Pandas Numpy and pydicom (in order to read dicom CT Scans) and Sciypy and OpenCV to perform Images Transformations.
+The code is based on Jupyter notebook Framework, using Python code. The main library used is Tensorflow 2.3 but any 2.x should be supported, as well you will need libraries like Pandas, Numpy, Pydicom (in order to read dicom CT Scans), Sciypy, OpenCV to perform Images Transformations.
 
 Also there are few GPU commands in order to manage the memmory, in case you dont have a GPU just comment them or run it on [Google Colab](https://colab.research.google.com/). and in case you want to run it on your local machine with GPU you will need to install tf-nightly.
 
@@ -43,7 +43,7 @@ If you want acces to the data you will have to mail <enric.rovira96@gmail.com> a
 Extact the contents of the zip file into your local machine or [Google Colab](https://colab.research.google.com/)
 
 
- 
+
  ## Model
  
  ## Results & Metrics
