@@ -26,11 +26,13 @@ There are few GPU commands in order to manage the memmory, in case you dont have
 
 In order to reproduce the results, follow these steps:
 
- 1. **[Pending]**
+ 1. Obtain the Data (Check Data Paragraph below). 
  
- 2. **[Pending]**
+ 2. Upload the notebooks to your local machine or Google Colab workspace. I recommend keep the default values of paths variables but you can modigy them if you desire.
  
- 3. **[Pending]**
+ 3. Running Scripts
+    1. Run `01_Preprocess_CT_Scans.ipynb notebook`, in order to get the masks images and save them as `.npy` files. 
+    2. asas
  
  
  ## Data
