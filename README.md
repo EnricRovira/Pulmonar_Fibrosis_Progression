@@ -46,6 +46,8 @@ Extact the contents of the zip file into your local machine or [Google Colab](ht
 
  ## Model
  
+ ![08](./Miscellaneous/08_Model_diagram.png)
+ 
  ## Results & Metrics
  
  ## Conclusions & Further Steps
