@@ -66,7 +66,7 @@ We will feed these preprocessed features in `tf.keras.utils.Sequence` API, as ou
 
 We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Hounsfield_scale) and mask the Lungs and save them in two folders `01_Data/train_masks/` and `01_Data/test_masks/`. This step can be reproduced with `01_Preprocess_CT_Scans.ipynb` notebook.
 
- ## Model
+ ## Models
  
  General Architecture Diagram.
  
@@ -96,7 +96,15 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
  
  ## Results & Metrics
  
+ The main problem of this dataset was that 176 really means very low data, and these architectures need a huge amount of data to learn specific patterns taht can generalize well without overfitting, this effect has been reduced thanks to techniques such as data augmentation, very high regularitzation (dropout, weigh decay, kernel_constraints, kernel_recurrent_constraints and clip gradients).
  
+ Another important aspect of this project is to keep focus on how we can help medicione in prgonosis and evolution of this desease. This model is able to make strong and far predictions, with high confidence, not only saying if a patient has fibrosis or no or which FVC will have in a couple of weeks, it can forecast long time measures (40 weeks) and long sequences.
+ 
+ Metrics:
+ 
+  | MSE   |      RMSE      |  MAPE | CustomMetric |
+  |----------|:-------------:|:------:|------:|
+  | col 1 is |  left-aligned | $1600 || $1600 |
  
  ## Conclusions & Further Steps
 
