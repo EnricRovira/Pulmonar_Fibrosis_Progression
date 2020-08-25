@@ -46,7 +46,7 @@ If you want acces to the data you will have to mail <enric.rovira96@gmail.com> a
 
 Extact the contents of the zip file into your local machine or [Google Colab](https://colab.research.google.com/)
 
-### Dataset preprocessing
+#### Dataset preprocessing
 
 Patient metadata consists on these features:
  - Patient Age.
@@ -60,9 +60,9 @@ We convert the raw tabular dataset to a Sequence dataset, by the key [Patient+We
 
 We will feed these preprocessed features in `tf.keras.utils.Sequence` API, as our Data Generator.
 
-### Imgs preprocessing
+#### Imgs preprocessing
 
-We convert the Raw images to Hounsfield units and mask the Lungs and save them in two folders `01_Data/train_masks/` and `01_Data/test_masks/`. This step can be reproduced with `01_Preprocess_CT_Scans.ipynb` notebook.
+We convert the Raw images to [.Hounsfield units](https://en.wikipedia.org/wiki/Hounsfield_scale) and mask the Lungs and save them in two folders `01_Data/train_masks/` and `01_Data/test_masks/`. This step can be reproduced with `01_Preprocess_CT_Scans.ipynb` notebook.
 
  ## Model
  
