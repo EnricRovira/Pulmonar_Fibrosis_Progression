@@ -100,11 +100,14 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
  
  Another important aspect of this project is to keep focus on how we can help medicione in prgonosis and evolution of this desease. This model is able to make strong and far predictions, with high confidence, not only saying if a patient has fibrosis or no or which FVC will have in a couple of weeks, it can forecast long time measures (40 weeks) and long sequences.
  
- Metrics:
+ #### Metrics 
  
-  | MSE   |      RMSE      |  MAPE | CustomMetric |
-  |----------|:-------------:|:------:|------:|
-  | col 1 is |  left-aligned | $1600 || $1600 |
+  | MSE   | RMSE |  MAPE | CustomMetric |
+  |-------|:----:|:-----:|------:|
+  | 36541 | 11.5 | 5.89 | 7.64
+  
+ #### Baselines 
+
  
  ## Conclusions & Further Steps
 
