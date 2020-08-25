@@ -68,7 +68,7 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
 
  ## Model
  
- Architecture Diagram.
+ General Architecture Diagram.
  
  ![08](./Miscellaneous/08_Model_diagram.PNG)
  
@@ -81,8 +81,18 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
    
      ![09](./Miscellaneous/09_Vnet_architecture_resized.png)
 
+  - **Backbone 3D Image Feature**
+  This model receives the 3D Scans as inputs with the same Data Augmentations as the Autoencoder model and compresses the image in a latent vector with low dimension (depending on the input). With params we can choose between using the autoencoder features (will speed up training) or extrracting features with several Conv+Pool layers.
   
-  - **Backbone 3D Image Feature** 
+  - **Encoder**
+  This model receives `BackBoneTabularModel` and `Backbone 3D Image Feature` outputs and concatenates them and performs a dense layer over the concatenated vector, dropout is applied before dense, and with params we can manage dropout rates, regularitzations, dense dim (I recommend you keep the dense dimension equal to the decoder input dimension) to avoid paddings... This model will mix the image features and tabular features in a (batch_size, image_dim, encoder_dense_dim).
+  
+  - **Decoder**
+  This model is where the ´magic´ happens. Will learn to map the encopder features along with the sequence inputs(fvc t-1 and weeks elapsed) to make predictions. An attention Layer will map the encoder output vector to a context vector and concatenate it with the the sequence inputs. This vector will pass through a Gru layer/s and finally through a Dense(optional) vector. With params we can manage the regularitzations, attention dim, num and units of gru, num and units of denses, dense activation, and dropouts.  
+  
+  - **PulmonarFibrosis-SeqToSeq**
+  This model brings the models mentioned before together and receives several traning params such as teacher forcing, teacher forcing decay, learning rate, checkpoints, sample weights... Provides custom functions to fit, predict and evaluate.
+  
  
  ## Results & Metrics
  
