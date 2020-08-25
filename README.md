@@ -46,7 +46,9 @@ If you want acces to the data you will have to mail <enric.rovira96@gmail.com> a
 
 Extact the contents of the zip file into your local machine or [Google Colab](https://colab.research.google.com/)
 
-#### Dataset Structure
+#### Dataset preprocessing
+
+We convert the raw tabular dataset to a Sequence dataset, by the key [Patient-Week]   
 
  ## Model
  
