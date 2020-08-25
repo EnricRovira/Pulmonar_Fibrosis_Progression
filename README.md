@@ -74,9 +74,14 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
  
  SubModels:
  
-  - **model1**
+  - **BackBoneTabularModel** This model creates the Embedding layers for processing the Sex and Smoker Status feature and concats the embeddings outputs with age and percent inputs. finally a dense layer is applied to the concatenated vector. With params we can change the embedding sizes, regularitzations, dropouts rates and dense dim.
   
-  - **model 2**
+  - **3D Autoencoder** 
+
+   ![09](./Miscellaneous/09_Vnet_architecture_resized.PNG)
+
+  
+  - **Backbone 3D Image Feature** This model receives the 3D Scans and inputs 
  
  ## Results & Metrics
  
