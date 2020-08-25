@@ -78,7 +78,7 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
   
   - **3D Autoencoder** 
 
-   ![09](./Miscellaneous/09_Vnet_architecture.png)
+   ![09](./Miscellaneous/09_Vnet_architecture_resized.png)
 
   
   - **Backbone 3D Image Feature** This model receives the 3D Scans and inputs 
