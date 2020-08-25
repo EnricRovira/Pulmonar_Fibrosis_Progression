@@ -62,11 +62,19 @@ We will feed these preprocessed features in `tf.keras.utils.Sequence` API, as ou
 
 #### Imgs preprocessing
 
-We convert the Raw images to [.Hounsfield units](https://en.wikipedia.org/wiki/Hounsfield_scale) and mask the Lungs and save them in two folders `01_Data/train_masks/` and `01_Data/test_masks/`. This step can be reproduced with `01_Preprocess_CT_Scans.ipynb` notebook.
+We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Hounsfield_scale) and mask the Lungs and save them in two folders `01_Data/train_masks/` and `01_Data/test_masks/`. This step can be reproduced with `01_Preprocess_CT_Scans.ipynb` notebook.
 
  ## Model
  
+ Architecture Diagram.
+ 
  ![08](./Miscellaneous/08_Model_diagram.PNG)
+ 
+ SubModels:
+ 
+  - **model1**
+  
+  - **model 2**
  
  ## Results & Metrics
  
