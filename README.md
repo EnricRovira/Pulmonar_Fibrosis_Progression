@@ -77,11 +77,12 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
   - **BackBoneTabularModel** This model creates the Embedding layers for processing the Sex and Smoker Status feature and concats the embeddings outputs with age and percent inputs. finally a dense layer is applied to the concatenated vector. With params we can change the embedding sizes, regularitzations, dropouts rates and dense dim.
   
   - **3D Autoencoder** 
-
+   This model receives the 3D Scans as inputs with several Data Augmentations (Flipping, updown, random crop, randomwindow, slicing, inverse order and random rotation) and compresses the image in a latent vector with low dimension (depending on the input). This model is  trained on (32*160*160) Images but any size will be accepted although i do not recommend you.
+   
    ![09](./Miscellaneous/09_Vnet_architecture_resized.png)
 
   
-  - **Backbone 3D Image Feature** This model receives the 3D Scans and inputs 
+  - **Backbone 3D Image Feature** 
  
  ## Results & Metrics
  
