@@ -79,7 +79,7 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
   - **3D Autoencoder** 
    This model receives the 3D Scans as inputs with several Data Augmentations (Flipping, updown, random crop, randomwindow, slicing, inverse order and random rotation) and compresses the image in a latent vector with low dimension (depending on the input). This model is  trained on (32*160*160) Images but any size will be accepted although i do not recommend you.
    
-   ![09](./Miscellaneous/09_Vnet_architecture_resized.png)
+     ![09](./Miscellaneous/09_Vnet_architecture_resized.png)
 
   
   - **Backbone 3D Image Feature** 
