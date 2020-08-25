@@ -48,7 +48,19 @@ Extact the contents of the zip file into your local machine or [Google Colab](ht
 
 #### Dataset preprocessing
 
-We convert the raw tabular dataset to a Sequence dataset, by the key [Patient-Week]   
+Patient metadata consists on these features:
+ - Patient Age.
+ - Patient Sex.
+ - Patient Smoke Status (Ex-Smoker, smoker, Never smoked).
+ - Weeks elapsed since last visit.
+ - FVC forced vital capacity, volume of air exhaled measured with a spirometer and represented in ml.
+ - Percent, a computed field which approximates the patient's FVC as a percent of the typical FVC for a person of similar characteristics.
+
+We convert the raw tabular dataset to a Sequence dataset, by the key [Patient+Week], and create dictionaries with inital features and sequence features that will serve as encoder and decoder inputs on the Model Stage.
+
+We perform StandarScaling over continous features such as Patient Age, FVC and Percent
+
+We will feed these preprocessed features in `tf.keras.utils.Sequence` API, as our Data Generator.
 
  ## Model
  
