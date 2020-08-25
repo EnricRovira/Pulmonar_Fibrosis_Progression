@@ -108,26 +108,38 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
   
  #### Baselines 
  
-  - Baseline 1- Mean FVC
+  - Baseline 1- Mean FVC from training to all predictions
   
   | MSE   | RMSE |  MAPE | CustomMetric |
   |-------|:----:|:-----:|------:|
   | 159456 | 17.97 | 12.49 | 10.12
   
-  - Baseline 2 - Initial FVC per Patient
+  - Baseline 2 - Initial FVC per Patient from each patient we take initial fvc and predict it over all timesteps.
   
   | MSE   | RMSE |  MAPE | CustomMetric |
   |-------|:----:|:-----:|------:|
   | 88876.58 | 12.23 | 7.298 | 8.43
   
-  - Baseline 3 - Last Timestep
+  - Baseline 3 - Last Timestep(Although this is a good baseline for general Sequence-to-Sequence purposes it is not for this case because we want to focus on the prognosis availability of the model).
   
 | MSE   | RMSE |  MAPE | CustomMetric |
   |-------|:----:|:-----:|------:|
   | 21214 | 9.54 | 3.766 | 6.576
  
+ 
  ## Conclusions & Further Steps
 
+There are several things that can be done for improving the model and the baslines availabilty to compare results:
 
+- Add uncertanity to the predictions.
+- Increse number of params such as decoder rnn dropout,  decoder rnn recurrent dropout, l2 weight decay alpha, etc.
+- Hypertune the model.
+- Add early stopping.
+- Improve Encoder architecture, add CNN1D to mix the tabular features with image.
+- Improve autoencoder architecture (Huge resources needed).
+- Sample weight the last timestep of the sequences more than the earliest.
+
+In general the model is learning good patterns and making good predictions, also we can interpretate the results thanks to attentions and there is room for improvement!!
+Any idea/comments will be much appreciated.
 
 
