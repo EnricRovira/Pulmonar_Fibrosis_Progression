@@ -1,5 +1,7 @@
 # Pulmonar_Fibrosis_Progression
 
+Sequence to Sequence Model based on encoder decoder architecture wirth visual attention for predictiong the progression of the Pulmonar Firbrosis in a wide range of weeks.
+
 ## Introduction
 
 **Fibrotic lung diseases** are an open and difficult problem nowadays, due to its variety and severity. Current methos make fibrotic lung diseases difficult to treat, even with access to a chest CT scan. Fibrotic lungs affect patients capabilty to breath correctly and in several cases this decline is fast and agressive.
