@@ -46,7 +46,7 @@ If you want acces to the data you will have to mail <enric.rovira96@gmail.com> a
 
 Extact the contents of the zip file into your local machine or [Google Colab](https://colab.research.google.com/)
 
-#### Dataset preprocessing
+### Dataset preprocessing
 
 Patient metadata consists on these features:
  - Patient Age.
@@ -56,17 +56,21 @@ Patient metadata consists on these features:
  - FVC forced vital capacity, volume of air exhaled measured with a spirometer and represented in ml.
  - Percent, a computed field which approximates the patient's FVC as a percent of the typical FVC for a person of similar characteristics.
 
-We convert the raw tabular dataset to a Sequence dataset, by the key [Patient+Week], and create dictionaries with inital features and sequence features that will serve as encoder and decoder inputs on the Model Stage.
-
-We perform StandarScaling over continous features such as Patient Age, FVC and Percent
+We convert the raw tabular dataset to a Sequence dataset, by the key [Patient+Week], and create dictionaries with inital features and sequence features that will serve as encoder and decoder inputs on the Model Stage. Finally, we perform StandarScaling over continous features such as Patient Age, FVC and Percent.
 
 We will feed these preprocessed features in `tf.keras.utils.Sequence` API, as our Data Generator.
+
+### Imgs preprocessing
+
+We convert the Raw images to Hounsfield units and mask the Lungs and save them in two folders `01_Data/train_masks/` and `01_Data/test_masks/`. This step can be reproduced with `01_Preprocess_CT_Scans.ipynb` notebook.
 
  ## Model
  
  ![08](./Miscellaneous/08_Model_diagram.PNG)
  
  ## Results & Metrics
+ 
+ 
  
  ## Conclusions & Further Steps
 
