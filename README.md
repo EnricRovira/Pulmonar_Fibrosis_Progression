@@ -104,10 +104,27 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
  
   | MSE   | RMSE |  MAPE | CustomMetric |
   |-------|:----:|:-----:|------:|
-  | 36541 | 11.5 | 5.89 | 7.64
+  | 36541 | 11.2 | 5.89 | 7.54
   
  #### Baselines 
-
+ 
+  - Baseline 1- Mean FVC
+  
+  | MSE   | RMSE |  MAPE | CustomMetric |
+  |-------|:----:|:-----:|------:|
+  | 159456 | 17.97 | 12.49 | 10.12
+  
+  - Baseline 2 - Initial FVC per Patient
+  
+  | MSE   | RMSE |  MAPE | CustomMetric |
+  |-------|:----:|:-----:|------:|
+  | 88876.58 | 12.23 | 7.298 | 8.43
+  
+  - Baseline 3 - Last Timestep
+  
+| MSE   | RMSE |  MAPE | CustomMetric |
+  |-------|:----:|:-----:|------:|
+  | 21214 | 9.54 | 3.766 | 6.576
  
  ## Conclusions & Further Steps
 
