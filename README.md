@@ -131,11 +131,10 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
 
 There are several things that can be done for improving the model and the baslines availabilty to compare results:
 
-- Add uncertanity to the predictions.
-- Increse number of params such as decoder rnn dropout,  decoder rnn recurrent dropout, l2 weight decay alpha, etc.
+- Increse number of params such as decoder rnn dropout, l2 weight decay alpha, etc.
 - Hypertune the model.
 - Add early stopping.
-- Improve Encoder architecture, add CNN1D to mix the tabular features with image.
+- Improve architecture, (more layers/params)
 - Improve autoencoder architecture (Huge resources needed).
 - Sample weight the last timestep of the sequences more than the earliest.
 
