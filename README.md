@@ -104,7 +104,7 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
  
   | MSE   | RMSE |  MAPE | CustomMetric |
   |-------|:----:|:-----:|------:|
-  | 36541 | 11.2 | 5.89 | 7.54
+  | 13878 | 9.47 | 3.51 | 6.25
   
  #### Baselines 
  
@@ -112,19 +112,19 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
   
   | MSE   | RMSE |  MAPE | CustomMetric |
   |-------|:----:|:-----:|------:|
-  | 159456 | 17.97 | 12.49 | 10.12
+  | 151977 | 14.26 | 12.11 | 9.82
   
   - Baseline 2 - Initial FVC per Patient from each patient we take initial fvc and predict it over all timesteps.
   
   | MSE   | RMSE |  MAPE | CustomMetric |
   |-------|:----:|:-----:|------:|
-  | 88876.58 | 12.23 | 7.298 | 8.43
+  | 100013 | 12.98 | 8.22 | 8.92
   
   - Baseline 3 - Last Timestep(Although this is a good baseline for general Sequence-to-Sequence purposes it is not for this case because we want to focus on the prognosis availability of the model).
   
 | MSE   | RMSE |  MAPE | CustomMetric |
   |-------|:----:|:-----:|------:|
-  | 21214 | 9.54 | 3.766 | 6.576
+  | 23886 | 10.13 | 4.25 | 6.83
  
  
  ## Conclusions & Further Steps
