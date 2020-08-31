@@ -145,4 +145,10 @@ There are several things that can be done for improving the model and the baslin
 In general the model is learning good patterns and making good predictions, also we can interpretate the results thanks to attentions and there is room for improvement!!
 Any idea/comments will be much appreciated.
 
+ ## About me
+ 
+ This project is performed as Kschool "Master de Inteligencia Artifical" TFM.
+ 
+ Kschool: [@Kschool](https://twitter.com/kschoolcom)
+ Me: [@Enric12RM](https://twitter.com/EnricRM12)
 
