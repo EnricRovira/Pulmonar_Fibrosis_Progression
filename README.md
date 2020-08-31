@@ -94,7 +94,7 @@ We convert the Raw images to [Hounsfield units](https://en.wikipedia.org/wiki/Ho
   - **Decoder**
   This model is where the ´magic´ happens. Will learn to map the encopder features along with the sequence inputs(fvc t-1 and weeks elapsed) to make predictions. An attention Layer will map the encoder output vector to a context vector and concatenate it with the the sequence inputs. This vector will pass through a Gru layer/s and finally through a Dense(optional) vector. With params we can manage the regularitzations, attention dim, num and units of gru, num and units of denses, dense activation, and dropouts.  
   
-  - **PulmonarFibrosis-SeqToSeq**
+  - **PulmonarFibrosis Sequence**
   This model brings the models mentioned before together and receives several traning params such as teacher forcing, teacher forcing decay, learning rate, checkpoints, sample weights... Provides custom functions to fit, predict and evaluate.
   
  
