@@ -149,6 +149,6 @@ Any idea/comments will be much appreciated.
  
  This project is performed as Kschool "Master de Inteligencia Artifical" TFM.
  
- Kschool: [@Kschool](https://twitter.com/kschoolcom)
+ Kschool: [@Kschool](https://twitter.com/kschoolcom)<br>
  Me: [@Enric12RM](https://twitter.com/EnricRM12)
 
