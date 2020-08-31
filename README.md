@@ -24,7 +24,9 @@ The code is based on Jupyter notebook Framework, using Python code. The main lib
 There are few GPU commands in order to manage the memmory, in case you dont have a GPU just comment them or run it on [Google Colab](https://colab.research.google.com/) with freee GPU, and in case you want to run it on your local machine with GPU you will need to install tf-nightly.
 
 `pip install --upgrade tensorflow`<br>
-`pip install --upgrade tf-nightly`
+`pip install --upgrade tf-nightly`<br>
+`pip install --upgrade tensorflow-probability`<br>
+`pip install --upgrade streamlit`
 
 In order to reproduce the results, follow these steps:
 
@@ -38,6 +40,8 @@ In order to reproduce the results, follow these steps:
      3. Run `03_Autoencoder_Unet3D.ipynb` for training the 3D Scans feature extractor Autoencoder. Its a mid-simple autoencoder model that will accelerate training on the final model. You can acces the pretrained model on `Saved_models`
      4. **Optional.** Run `Optional_Resnet3D.ipynb` , didn´t outperform autoencoder in my tests but maybe you make it works.
      5. Run `04_FullModelTraining.ipynb` for Sequence to Sequence Model training, at least you will need utils scripts and masked scans. Standard params are provided you can tune them as you wish, maybe some combination does not works, i am testing several combinations and solving bugs. Code will be updated.
+     6. **Optional.** Run `Optional_PlotScans.ipynb` , to plot 3d lungs with segmentations and different window values.
+     7. Run `streamlit run 06_Dashboard` inside Dashboard folder to run a streamlit dashboard
  
  ## Data
  
